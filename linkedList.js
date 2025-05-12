@@ -92,6 +92,18 @@ class LinkedList {
 
     return false;
   }
+
+  find(value) {
+    let temp = this.head;
+    let index = 0;
+
+    while (temp != null) {
+      if (temp.value === value) return index;
+      temp = temp.nextNode;
+      index++;
+    }
+    return null;
+  }
 }
 
 // let myLinkedList = new LinkedList(7);
