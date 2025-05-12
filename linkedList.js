@@ -58,6 +58,17 @@ class LinkedList {
     return this.tail;
   }
 
+  at(index) {
+    if (index < 0 || index >= this.length) {
+      return undefined;
+    }
+    let temp = this.head;
+    for (let i = 0; i < index; i++) {
+      temp = temp.nextNode;
+    }
+    return temp;
+  }
+
   pop() {
     let temp = this.head;
     let pre = null;
