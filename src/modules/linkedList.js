@@ -1,11 +1,13 @@
-class Node {
-  constructor(value) {
-    this.value = value || null;
-    this.nextNode = null;
-  }
-}
+import { Node } from "./node";
 
-class LinkedList {
+// class Node {
+//   constructor(value) {
+//     this.value = value || null;
+//     this.nextNode = null;
+//   }
+// }
+
+export class LinkedList {
   constructor() {
     this.head = null;
     this.tail = this.head;
