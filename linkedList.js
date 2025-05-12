@@ -32,6 +32,20 @@ class LinkedList {
     return this;
   }
 
+  prepend(value) {
+    const newNode = new Node(value);
+
+    if (!this.head.value) {
+      this.head = newNode;
+      this.tail = newNode;
+    } else {
+      newNode.nextNode = this.head;
+      this.head = newNode;
+    }
+    this.length++;
+    return this;
+  }
+
   size() {
     return this.length;
   }
