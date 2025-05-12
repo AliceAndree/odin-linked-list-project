@@ -111,4 +111,16 @@ class LinkedList {
 
     return `${string}${temp}`;
   }
+
+  insertAt(index, value) {
+    let temp = this.at(index);
+    let pre = this.at(index - 1);
+
+    if (temp) {
+      const newNode = new Node(value);
+      pre.nextNode = newNode;
+      newNode.nextNode = temp;
+      this.length++;
+    }
+  }
 }
