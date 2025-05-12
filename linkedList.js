@@ -98,4 +98,17 @@ class LinkedList {
     }
     return null;
   }
+
+  toString() {
+    let temp = this.head;
+    let string = ``;
+
+    while (temp != null) {
+      let stringValue = temp.value;
+      string += `( ${stringValue} ) -> `;
+      temp = temp.nextNode;
+    }
+
+    return `${string}${temp}`;
+  }
 }
