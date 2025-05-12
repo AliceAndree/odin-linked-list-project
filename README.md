@@ -1,1 +1,3 @@
-# odin-linked-list-project
+# odin-linked-list-project# The Odin Project - Weather App
+
+## This is an exercise from [The Odin Project](https://www.theodinproject.com/)'s Fullstack JS Path about Linked Lists.
