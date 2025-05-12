@@ -123,4 +123,14 @@ class LinkedList {
       this.length++;
     }
   }
+
+  removeAt(index) {
+    let temp = this.at(index);
+    let pre = this.at(index - 1);
+
+    if (temp) {
+      pre.nextNode = temp.nextNode;
+      this.length--;
+    }
+  }
 }
