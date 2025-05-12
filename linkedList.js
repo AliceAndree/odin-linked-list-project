@@ -81,6 +81,17 @@ class LinkedList {
     this.tail = pre;
     this.length--;
   }
+
+  contains(value) {
+    let temp = this.head;
+
+    while (temp != null) {
+      if (temp.value === value) return true;
+      temp = temp.nextNode;
+    }
+
+    return false;
+  }
 }
 
 // let myLinkedList = new LinkedList(7);
